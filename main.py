@@ -78,12 +78,6 @@ STRATEGY_CATALOG: List[StrategyConfig] = [
         stop_loss_pct=0.15, take_profit_pct=0.20, type_vente="SUIVEUR",
         minimum_score=75, volume_ratio_min=2.0,
         tests={"ABOVE_MA200": 15, "BOLLINGER_BREAK": 25, "VOLUME_SURGE": 30, "MACD_SIGNAL": 15, "TREND_SLOPE": 15}
-    ),
-    StrategyConfig(
-        name="📈 Momentum Classique",
-        stop_loss_pct=0.12, take_profit_pct=0.15, type_vente="SUIVEUR_SECURISE",
-        secure_trigger_pct=0.08, minimum_score=65,
-        tests={"ABOVE_MA200": 25, "RSI_MOMENTUM": 15, "MACD_SIGNAL": 10, "MA20>MA50>MA200": 35, "VOLUME_SURGE": 15}
     )
 ]
 
