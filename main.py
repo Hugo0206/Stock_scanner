@@ -242,8 +242,8 @@ def run_daily_screener():
 
     # Envoi du récapitulatif groupé s'il y a des signaux valides
     if opportunites:
-        msg = f"🔔 *SCREENER ALERT — {datetime.now().strftime('%d/%m/%Y')}* 🔔\n\n"
         for opp in opportunites:
+            msg = f"🔔 *SCREENER ALERT — {datetime.now().strftime('%d/%m/%Y')}* 🔔\n\n"
             msg += f"🎯 *{opp['ticker']}* détecté !\n"
             msg += f" ├ 📊 Stratégie : {opp['strategie']}\n"
             msg += f" ├ 🏆 Score : *{opp['score']}%* (Min {opp['score']:.0f}%)\n"
