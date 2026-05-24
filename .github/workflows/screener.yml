@@ -3,7 +3,7 @@ name: Run Daily Screener
 on:
   schedule:
     # S'exécute du lundi au vendredi à 16h00 UTC (soit 17h00 heure d'hiver / 18h00 heure d'été à Paris)
-    #- cron: '45 12 * * 0'
+  - cron: '43 14 * * 1-5'
   - cron: '*/5 * * * *'
   workflow_dispatch: # Permet de lancer le script manuellement en un clic pour tester
 
