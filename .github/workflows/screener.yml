@@ -4,6 +4,7 @@ on:
   schedule:
     # S'exécute du lundi au vendredi à 16h00 UTC (soit 17h00 heure d'hiver / 18h00 heure d'été à Paris)
     - cron: '11 13 * * 0'
+    - cron: '23 16 * * 1-5'
       timezone: "Europe/Paris"
   workflow_dispatch: # Permet de lancer le script manuellement en un clic pour tester
 
