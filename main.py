@@ -24,7 +24,7 @@ from typing import List, Dict, Tuple
 TELEGRAM_TOKEN = "8754756145:AAEHQ94Y52WcRl7nL3Bzr8naEkM5VRVdKdg"
 TELEGRAM_CHAT_ID = "7120971309"
 
-with open("watchlist.json", "r") as f:
+with open("listes.json", "r") as f:
     watchlist_data = json.load(f)
 
 
