@@ -4,7 +4,6 @@ on:
   workflow_dispatch: # Permet de lancer le script manuellement en un clic pour tester
   schedule:
   - cron: '43 14 * * 1-5'
-  - cron: '*/5 * * * *'
 # Force l'utilisation de Node.js 24 pour supprimer l'avertissement de dépréciation
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
