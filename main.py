@@ -24,8 +24,12 @@ from typing import List, Dict, Tuple
 TELEGRAM_TOKEN = "8754756145:AAEHQ94Y52WcRl7nL3Bzr8naEkM5VRVdKdg"
 TELEGRAM_CHAT_ID = "7120971309"
 
+with open("watchlist.json", "r") as f:
+    watchlist_data = json.load(f)
+
+
 # Nom de la liste du fichier JSON à utiliser pour le scan quotidien
-WATCHLIST = ["AI.PA"] 
+WATCHLIST = watchlist_data[0]["liste"]
 
 # ══════════════════════════════════════════════════════════════
 # 1. DATACLASS STRATEGYCONFIG
