@@ -1,0 +1,20 @@
+name: Test Echo Automatique
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Déclenchement toutes les 5 minutes
+    - cron: '*/5 * * * *'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  test-echo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Afficher le message de test
+      run: |
+        echo "L'automatisme GitHub Actions fonctionne parfaitement !"
+        echo "Il est actuellement : $(date)"
