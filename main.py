@@ -257,9 +257,9 @@ def run_daily_screener():
             msg += f" ├ 📈 RSI : {opp['rsi']}\n"
             msg += f" └ 🛠️ Filtres validés : _{', '.join(opp['tests'])}_\n\n"
             msg += f"────────────────────\n\n"
-        
+            send_telegram_alert(msg)
         print("📨 Opportunités validées. Envoi de la notification...")
-        send_telegram_alert(msg)
+        
     else:
         print("😴 Fin du scan. Aucun signal identifié aujourd'hui.")
 
