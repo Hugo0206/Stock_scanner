@@ -3,8 +3,8 @@ name: Run Daily Screener
 on:
   schedule:
     # S'exécute du lundi au vendredi à 16h00 UTC (soit 17h00 heure d'hiver / 18h00 heure d'été à Paris)
-    - cron: '0 16 * * 1-5'
-    - cron: '0 12 * * 0'
+    - cron: '0 15 * * 1-5'
+    - cron: '7 10 * * 0'
   workflow_dispatch: # Permet de lancer le script manuellement en un clic pour tester
 
 # Force l'utilisation de Node.js 24 pour supprimer l'avertissement de dépréciation
