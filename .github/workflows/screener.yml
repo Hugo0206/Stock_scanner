@@ -29,4 +29,4 @@ jobs:
         pip install yfinance pandas requests numpy
 
     - name: Exécuter le screener
-      run: python screener.py
+      run: python main.py
